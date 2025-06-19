@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis Generator - AI-Powered Academic Writing Assistant</title>
+    <meta name="description" content="Generate professional thesis chapters and outlines with AI. Perfect for students and researchers. Supports APA, MLA, Chicago formats.">
+    <meta name="keywords" content="thesis generator, AI writing, academic writing, research paper, APA format, MLA format, Chicago style">
+    <meta name="author" content="Thesis Generator">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/kaynelapps/thesis-web/">
+    <meta property="og:title" content="Thesis Generator - AI-Powered Academic Writing Assistant">
+    <meta property="og:description" content="Generate professional thesis chapters and outlines with AI. Perfect for students and researchers.">
+    <meta property="og:image" content="https://github.com/kaynelapps/thesis-web/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/kaynelapps/thesis-web/">
+    <meta property="twitter:title" content="Thesis Generator - AI-Powered Academic Writing Assistant">
+    <meta property="twitter:description" content="Generate professional thesis chapters and outlines with AI. Perfect for students and researchers.">
+    <meta property="twitter:image" content="https://github.com/kaynelapps/thesis-web/favicon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/landing.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="prefetch" href="app.html">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Thesis Generator",
+        "description": "AI-powered academic writing assistant for generating thesis chapters and outlines",
+        "url": "https://yourusername.github.io/thesis_generator/",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "AI Chapter Generation",
+            "Multiple Citation Formats",
+            "Academic Writing Styles",
+            "Instant Results"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="app-badge">
+                    <span>🎓 AI-Powered</span>
+                </div>
+                
+                <h1>Generate Your Thesis with AI</h1>
+                
+                <p class="hero-subtitle">
+                    Create professional academic thesis chapters in minutes, not months. 
+                    Our advanced AI helps you structure, write, and format your thesis with ease.
+                </p>
+                
+                <div class="features-preview">
+                    <div class="feature-item">
+                        <span class="feature-icon">🤖</span>
+                        <span>AI Chapter Generation</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📚</span>
+                        <span>APA, MLA, Chicago</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✏️</span>
+                        <span>Fully Editable</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>Instant Results</span>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <button id="start-generating" class="cta-primary" aria-label="Start writing thesis with AI">
+                        <span class="button-text">Start Writing My Thesis</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+                    <p class="cta-subtitle">Free to start • No registration required</p>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="app-mockup">
+                    <div class="mockup-screen" role="img" aria-label="Thesis Generator app interface preview">
+                        <div class="mockup-header">
+                            <div class="mockup-title">Create Thesis</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-field">
+                                <div class="field-label">Thesis Topic</div>
+                                <div class="field-input">The Impact of AI on Education...</div>
+                            </div>
+                            <div class="mockup-chapters">
+                                <div class="chapter-item">📖 Introduction</div>
+                                <div class="chapter-item">🔍 Literature Review</div>
+                                <div class="chapter-item">📊 Methodology</div>
+                                <div class="chapter-item">📈 Results & Analysis</div>
+                                <div class="chapter-item">💡 Conclusion</div>
+                            </div>
+                            <div class="mockup-button">Generate Thesis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits" id="benefits">
+            <div class="benefits-container">
+                <h2>Why Choose Thesis Generator?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Smart Chapter Structure</h3>
+                        <p>AI automatically generates logical chapter outlines based on your topic and academic field.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📝</div>
+                        <h3>Multiple Writing Styles</h3>
+                        <p>Choose from Academic, Technical, or Analytical writing styles to match your requirements.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📋</div>
+                        <h3>Citation Formats</h3>
+                        <p>Supports APA, MLA, and Chicago citation styles for proper academic formatting.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Instant Generation</h3>
+                        <p>Generate complete thesis chapters in minutes with our advanced AI technology.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔒</div>
+                        <h3>Privacy Focused</h3>
+                        <p>Your thesis content is processed securely and never stored or shared with third parties.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💾</div>
+                        <h3>Export Options</h3>
+                        <p>Download your thesis in multiple formats including PDF, Word, and plain text.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="steps-container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Enter Your Topic</h3>
+                            <p>Simply input your thesis topic and let AI suggest chapter structure</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow" aria-hidden="true">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Customize Settings</h3>
+                            <p>Choose writing style (Academic/Technical) and format (APA/MLA/Chicago)</p>
+                        </div>
+                    </div>
+                    <div class="step-arrow" aria-hidden="true">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Generate & Edit</h3>
+                            <p>AI creates your thesis content, then edit and export as needed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Showcase -->
+        <section class="features-showcase" id="features">
+            <div class="features-container">
+                <h2>Powerful Features for Academic Success</h2>
+                <div class="features-list">
+                    <div class="feature-row">
+                        <div class="feature-info">
+                            <h3>🎓 Academic Excellence</h3>
+                            <p>Built specifically for academic writing with proper structure, citations, and formatting that meets university standards.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-info">
+                            <h3>🌐 Multi-Language Support</h3>
+                            <p>Generate thesis content in multiple languages including English, Spanish, French, Chinese, and Hindi.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-info">
+                            <h3>📱 Cross-Platform</h3>
+                            <p>Works seamlessly on desktop, tablet, and mobile devices. Start on one device, continue on another.</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-info">
+                            <h3>🔄 Real-Time Editing</h3>
+                            <p>Edit and refine your thesis content in real-time with our intuitive editor and instant preview.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials-container">
+                <h2>What Students Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"This tool saved me weeks of work! The AI-generated chapters were well-structured and gave me a perfect starting point for my master's thesis."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah M.</h4>
+                                <span>Master's Student, Psychology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The citation formatting is spot-on! No more worrying about APA vs MLA - the AI handles it perfectly every time."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>James L.</h4>
+                                <span>PhD Candidate, Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As a non-native English speaker, this tool helped me structure my thoughts and write academically. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Maria G.</h4>
+                                <span>International Student, Business</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Is the thesis generator really free?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! You can start generating thesis content immediately without any registration or payment. Advanced features may require a subscription in the future.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>How accurate is the AI-generated content?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Our AI provides well-structured, academically sound content as a starting point. We recommend reviewing and customizing the content to match your specific research and requirements.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Can I use this for any academic level?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! The tool works for undergraduate, master's, and doctoral level theses. You can adjust the complexity and depth based on your academic level.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Is my thesis content secure and private?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, your privacy is our priority. Your thesis content is processed securely and is never stored permanently or shared with third parties.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What citation formats are supported?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We support the three most common academic citation formats: APA (American Psychological Association), MLA (Modern Language Association), and Chicago style.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Can I edit the generated content?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! All generated content is fully editable. You can modify, expand, or restructure any part of your thesis to match your specific needs and research.</p>
+                </div>
+            </div>
+        </div> <!-- Close faq-list -->
+    </div> <!-- Close faq-container -->
+</section>
+
+
+        <!-- Stats Section -->
+        <section class="stats" id="stats">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Theses Generated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Universities</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">% Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta" id="get-started">
+            <div class="cta-container">
+                <h2>Ready to Write Your Thesis?</h2>
+                <p>Join thousands of students and researchers who trust AI to help with their academic writing.</p>
+                
+                <button id="start-generating-bottom" class="cta-primary large" aria-label="Generate thesis with AI now">
+                    <span class="button-text">Generate My Thesis Now</span>
+                    <span class="button-arrow">→</span>
+                </button>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">No Registration Required</div>
+                    <div class="trust-item">Instant Results</div>
+                    <div class="trust-item">Academic Quality</div>
+                    <div class="trust-item">100% Free to Start</div>
+                </div>
+                
+                <div class="security-badges">
+                    <div class="security-item">
+                        <span class="security-icon">🔒</span>
+                        <span>SSL Encrypted</span>
+                    </div>
+                    <div class="security-item">
+                        <span class="security-icon">🛡️</span>
+                        <span>Privacy Protected</span>
+                    </div>
+                    <div class="security-item">
+                        <span class="security-icon">⚡</span>
+                        <span>Lightning Fast</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+    <div class="footer-content">
+        <div class="footer-main">
+            <div class="footer-section">
+                <h3>Thesis Generator</h3>
+                <p>AI-powered academic writing assistant helping students and researchers create professional thesis content with ethical guidelines and academic integrity.</p>
+                <div class="footer-social">
+                    <a href="https://twitter.com/thesisgenerator" aria-label="Follow us on Twitter" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thesisgenerator" aria-label="Follow us on LinkedIn" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/yourusername/thesis-generator" aria-label="View our GitHub repository" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:hello@thesisgenerator.com" aria-label="Contact us via email" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Features</h4>
+                <ul class="footer-links">
+                    <li><a href="#benefits">🤖 AI Chapter Generation</a></li>
+                    <li><a href="#benefits">📚 Citation Formats</a></li>
+                    <li><a href="#benefits">✍️ Writing Styles</a></li>
+                    <li><a href="#benefits">📄 Export Options</a></li>
+                    <li><a href="#benefits">🌍 Multi-language Support</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#how-it-works">📖 How It Works</a></li>
+                    <li><a href="contact.html">💬 Contact Support</a></li>
+                    <li><a href="academic-integrity.html">🎓 Academic Guidelines</a></li>
+                    <li><a href="#faq">❓ FAQ</a></li>
+                    <li><a href="#testimonials">⭐ User Reviews</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Legal & Privacy</h4>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">🔒 Privacy Policy</a></li>
+                    <li><a href="terms.html">📋 Terms of Service</a></li>
+                    <li><a href="cookies.html">🍪 Cookie Policy</a></li>
+                    <li><a href="academic-integrity.html">⚖️ Academic Integrity</a></li>
+                    <li><a href="contact.html">📧 Report Issues</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2024 Thesis Generator. All rights reserved.</p>
+                <p class="footer-tagline">Empowering academic excellence through ethical AI assistance</p>
+            </div>
+            <div class="footer-disclaimer">
+                <p><small>⚠️ <strong>Important:</strong> Generated content should be reviewed, customized, and properly cited. Always use in accordance with your institution's academic integrity policies. This tool is designed to assist, not replace, your original research and critical thinking.</small></p>
+            </div>
+        </div>
+        
+        <div class="footer-trust">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="trust-icon">🛡️</span>
+                    <span class="trust-text">GDPR Compliant</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-icon">🔒</span>
+                    <span class="trust-text">Secure & Private</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-icon">🎓</span>
+                    <span class="trust-text">Academic Standards</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-icon">🌍</span>
+                    <span class="trust-text">Global Access</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" style="display: none;">
+        <span>↑</span>
+    </button>
+
+    <!-- Loading Overlay (hidden by default) -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Launching Thesis Generator...</p>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner (optional) -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience and analyze site usage. By continuing to use this site, you consent to our use of cookies.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="cookie-btn accept">Accept</button>
+                <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+                <a href="/privacy" class="cookie-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is the thesis generator really free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! You can start generating thesis content immediately without any registration or payment. Advanced features may require a subscription in the future."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is the AI-generated content?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our AI provides well-structured, academically sound content as a starting point. We recommend reviewing and customizing the content to match your specific research and requirements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use this for any academic level?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! The tool works for undergraduate, master's, and doctoral level theses. You can adjust the complexity and depth based on your academic level."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Main JavaScript -->
+    <script src="js/landing.js"></script>
+
+    <!-- Service Worker for PWA (optional) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+
+    <!-- Accessibility: Skip to main content -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+
+    <!-- Performance monitoring -->
+    <script>
+        // Basic performance monitoring
+        window.addEventListener('load', function() {
+            if ('performance' in window) {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                console.log('Page load time:', loadTime + 'ms');
+                
+                // Track to analytics if available
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'timing_complete', {
+                        'name': 'load',
+                        'value': loadTime
+                    });
+                }
+            }
+        });
+    </script>
+
+    <!-- Error tracking -->
+    <script>
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript error:', e.error);
+            
+            // Track to analytics if available
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'exception', {
+                    'description': e.error.toString(),
+                    'fatal': false
+                });
+            }
+        });
+    </script>
+
+    <!-- Preload critical resources for next page -->
+    <link rel="preload" href="app.html" as="document">
+    <link rel="preload" href="main.dart.js" as="script">
+
+</body>
+</html>
